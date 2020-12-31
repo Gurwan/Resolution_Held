@@ -2,6 +2,8 @@ package com.okariastudio.resolutionheld
 
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.view.WindowManager
+import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
@@ -15,6 +17,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val pleinEcran = WindowManager.LayoutParams.FLAG_FULLSCREEN
+        window.setFlags(pleinEcran, pleinEcran)
 
         loadData()
 
@@ -544,12 +548,53 @@ class MainActivity : AppCompatActivity() {
                 saveData()
             }
         }
+
+
+        val resetButton : Button = findViewById(R.id.resetButton)
+        resetButton.setOnClickListener {
+            iv1.setImageResource(R.drawable.noir1)
+            iv2.setImageResource(R.drawable.noir2)
+            iv3.setImageResource(R.drawable.noir3)
+            iv4.setImageResource(R.drawable.noir4)
+            iv5.setImageResource(R.drawable.noir5)
+            iv6.setImageResource(R.drawable.noir6)
+            iv7.setImageResource(R.drawable.noir7)
+            iv8.setImageResource(R.drawable.noir8)
+            iv9.setImageResource(R.drawable.noir9)
+            iv10.setImageResource(R.drawable.noir10)
+            iv11.setImageResource(R.drawable.noir11)
+            iv12.setImageResource(R.drawable.noir12)
+            iv13.setImageResource(R.drawable.noir13)
+            iv14.setImageResource(R.drawable.noir14)
+            iv15.setImageResource(R.drawable.noir15)
+            iv16.setImageResource(R.drawable.noir16)
+            iv17.setImageResource(R.drawable.noir17)
+            iv18.setImageResource(R.drawable.noir18)
+            iv19.setImageResource(R.drawable.noir19)
+            iv20.setImageResource(R.drawable.noir20)
+            iv21.setImageResource(R.drawable.noir21)
+            iv22.setImageResource(R.drawable.noir22)
+            iv23.setImageResource(R.drawable.noir23)
+            iv24.setImageResource(R.drawable.noir24)
+            iv25.setImageResource(R.drawable.noir25)
+            iv26.setImageResource(R.drawable.noir26)
+            iv27.setImageResource(R.drawable.noir27)
+            iv28.setImageResource(R.drawable.noir28)
+            iv29.setImageResource(R.drawable.noir29)
+            iv30.setImageResource(R.drawable.noir30)
+            iv31.setImageResource(R.drawable.noir31)
+            for(i in 0..30){
+                rondList?.get(i)?.state = 0
+            }
+            saveData()
+        }
+
     }
 
     fun saveData(){
         val sharedPreferences : SharedPreferences = getSharedPreferences(
-            "shared preferences",
-            MODE_PRIVATE
+                "shared preferences",
+                MODE_PRIVATE
         )
         val editor : SharedPreferences.Editor = sharedPreferences.edit()
         val gson = Gson()
@@ -560,18 +605,18 @@ class MainActivity : AppCompatActivity() {
 
     fun loadData(){
         val sharedPreferences : SharedPreferences = getSharedPreferences(
-            "shared preferences",
-            MODE_PRIVATE
+                "shared preferences",
+                MODE_PRIVATE
         )
         val gson = Gson()
         val json : String? = sharedPreferences.getString("list", null)
         val type = object : TypeToken<ArrayList<Rond?>?>() {}.type
-        rondList = gson.fromJson(json,type)
+        rondList = gson.fromJson(json, type)
 
         if(rondList==null){
             rondList = ArrayList()
             for(i in 1..31){
-                (rondList as ArrayList<Rond>).add(Rond(i,0))
+                (rondList as ArrayList<Rond>).add(Rond(i, 0))
             }
         }
     }

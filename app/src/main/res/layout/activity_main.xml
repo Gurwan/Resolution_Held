@@ -9,305 +9,316 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <GridLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:rowCount="15"
-            android:columnCount="4">
+            android:columnCount="4"
+            android:rowCount="15">
 
             <ImageView
                 android:id="@+id/rond1"
-                android:layout_margin="15dp"
-                android:layout_column="0"
-                android:layout_row="0"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond2"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="1"
                 android:layout_row="0"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="1"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond3"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="2"
                 android:layout_row="0"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="2"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond4"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="3"
                 android:layout_row="0"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="3"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond5"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginStart="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="3"
                 android:layout_row="1"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="3"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond6"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginStart="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="3"
                 android:layout_row="2"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="3"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond7"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="2"
                 android:layout_row="2"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="2"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond8"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="1"
                 android:layout_row="2"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="1"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond9"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="0"
                 android:layout_row="2"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond10"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="0"
                 android:layout_row="3"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond11"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="0"
                 android:layout_row="4"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond12"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="1"
                 android:layout_row="4"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="1"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond13"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="2"
                 android:layout_row="4"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="2"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond14"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="3"
                 android:layout_row="4"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="3"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond15"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="3"
                 android:layout_row="5"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="3"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond16"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="3"
                 android:layout_row="6"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="3"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond17"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="2"
                 android:layout_row="6"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="2"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond18"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="1"
                 android:layout_row="6"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="1"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond19"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="0"
                 android:layout_row="6"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
 
             <ImageView
                 android:id="@+id/rond20"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="0"
                 android:layout_row="7"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond21"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="0"
                 android:layout_row="8"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond22"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="1"
                 android:layout_row="8"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="1"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond23"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="2"
                 android:layout_row="8"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="2"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond24"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="3"
                 android:layout_row="8"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="3"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
 
             <ImageView
                 android:id="@+id/rond25"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="3"
                 android:layout_row="9"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="3"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond26"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="3"
                 android:layout_row="10"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="3"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond27"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="2"
                 android:layout_row="10"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="2"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond28"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="1"
                 android:layout_row="10"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="1"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond29"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="0"
                 android:layout_row="10"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond30"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="0"
                 android:layout_row="11"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
             <ImageView
                 android:id="@+id/rond31"
-                android:layout_margin="15dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_column="0"
                 android:layout_row="12"
-                app:srcCompat="@drawable/rondnoir"/>
+                android:layout_column="0"
+                android:layout_margin="15dp"
+                app:srcCompat="@drawable/rondnoir" />
 
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_row="13"
+                android:id="@+id/resetButton"
+                android:layout_column="3"
+                android:text="@string/reset"/>
 
         </GridLayout>
 
-    </ScrollView>
 
+
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

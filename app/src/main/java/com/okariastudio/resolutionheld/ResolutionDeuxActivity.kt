@@ -2,27 +2,23 @@ package com.okariastudio.resolutionheld
 
 import android.content.Intent
 import android.content.SharedPreferences
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MotionEvent
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageView
-import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.r0adkll.slidr.Slidr
+import com.r0adkll.slidr.model.SlidrInterface
 
-
-class MainActivity : AppCompatActivity() {
+class ResolutionDeuxActivity : AppCompatActivity() {
 
     var rondList : MutableList<Rond>? = null
-    var x1 = 0f
-    var x2 = 0f
-    var y1 = 0f
-    var y2 = 0f
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_resolution_deux)
         val pleinEcran = WindowManager.LayoutParams.FLAG_FULLSCREEN
         window.setFlags(pleinEcran, pleinEcran)
 
@@ -595,9 +591,9 @@ class MainActivity : AppCompatActivity() {
             saveData()
         }
 
-        val nextButton : Button = findViewById(R.id.next)
-        nextButton.setOnClickListener {
-            val intent = Intent(this, ResolutionDeuxActivity::class.java)
+        val previousButton : Button = findViewById(R.id.next)
+        previousButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
@@ -611,7 +607,7 @@ class MainActivity : AppCompatActivity() {
         val editor : SharedPreferences.Editor = sharedPreferences.edit()
         val gson = Gson()
         val json : String = gson.toJson(rondList)
-        editor.putString("list", json)
+        editor.putString("list2", json)
         editor.apply()
     }
 
@@ -621,7 +617,7 @@ class MainActivity : AppCompatActivity() {
                 MODE_PRIVATE
         )
         val gson = Gson()
-        val json : String? = sharedPreferences.getString("list", null)
+        val json : String? = sharedPreferences.getString("list2", null)
         val type = object : TypeToken<ArrayList<Rond?>?>() {}.type
         rondList = gson.fromJson(json, type)
 
@@ -632,6 +628,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
 
 }

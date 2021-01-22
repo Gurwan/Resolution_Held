@@ -7,14 +7,21 @@
     android:background="@color/background"
     tools:context=".MainActivity">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:columnCount="4"
             android:rowCount="15">
 
@@ -24,9 +31,9 @@
                 android:layout_height="60dp"
                 android:layout_row="0"
                 android:layout_column="0"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginStart="30dp"
                 app:srcCompat="@drawable/noir1" />
 
 
@@ -36,7 +43,9 @@
                 android:layout_height="60dp"
                 android:layout_row="0"
                 android:layout_column="1"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir2" />
 
             <ImageView
@@ -45,7 +54,9 @@
                 android:layout_height="60dp"
                 android:layout_row="0"
                 android:layout_column="2"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir3" />
 
             <ImageView
@@ -54,7 +65,9 @@
                 android:layout_height="60dp"
                 android:layout_row="0"
                 android:layout_column="3"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir4" />
 
             <ImageView
@@ -63,9 +76,9 @@
                 android:layout_height="60dp"
                 android:layout_row="1"
                 android:layout_column="3"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir5" />
 
             <ImageView
@@ -74,9 +87,9 @@
                 android:layout_height="60dp"
                 android:layout_row="2"
                 android:layout_column="3"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir6" />
 
             <ImageView
@@ -85,7 +98,9 @@
                 android:layout_height="60dp"
                 android:layout_row="2"
                 android:layout_column="2"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir7" />
 
             <ImageView
@@ -94,7 +109,9 @@
                 android:layout_height="60dp"
                 android:layout_row="2"
                 android:layout_column="1"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir8" />
 
             <ImageView
@@ -103,9 +120,9 @@
                 android:layout_height="60dp"
                 android:layout_row="2"
                 android:layout_column="0"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginStart="30dp"
                 app:srcCompat="@drawable/noir9" />
 
             <ImageView
@@ -114,10 +131,9 @@
                 android:layout_height="60dp"
                 android:layout_row="3"
                 android:layout_column="0"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginStart="30dp"
                 app:srcCompat="@drawable/noir10" />
 
             <ImageView
@@ -126,9 +142,9 @@
                 android:layout_height="60dp"
                 android:layout_row="4"
                 android:layout_column="0"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginStart="30dp"
                 app:srcCompat="@drawable/noir11" />
 
             <ImageView
@@ -137,7 +153,9 @@
                 android:layout_height="60dp"
                 android:layout_row="4"
                 android:layout_column="1"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir12" />
 
             <ImageView
@@ -146,7 +164,9 @@
                 android:layout_height="60dp"
                 android:layout_row="4"
                 android:layout_column="2"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir13" />
 
             <ImageView
@@ -155,7 +175,9 @@
                 android:layout_height="60dp"
                 android:layout_row="4"
                 android:layout_column="3"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir14" />
 
             <ImageView
@@ -164,7 +186,9 @@
                 android:layout_height="60dp"
                 android:layout_row="5"
                 android:layout_column="3"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir15" />
 
             <ImageView
@@ -173,7 +197,9 @@
                 android:layout_height="60dp"
                 android:layout_row="6"
                 android:layout_column="3"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir16" />
 
             <ImageView
@@ -182,7 +208,9 @@
                 android:layout_height="60dp"
                 android:layout_row="6"
                 android:layout_column="2"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir17" />
 
             <ImageView
@@ -191,7 +219,9 @@
                 android:layout_height="60dp"
                 android:layout_row="6"
                 android:layout_column="1"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir18" />
 
             <ImageView
@@ -200,9 +230,9 @@
                 android:layout_height="60dp"
                 android:layout_row="6"
                 android:layout_column="0"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginStart="30dp"
                 app:srcCompat="@drawable/noir19" />
 
 
@@ -212,10 +242,9 @@
                 android:layout_height="60dp"
                 android:layout_row="7"
                 android:layout_column="0"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginBottom="15dp"
                 app:srcCompat="@drawable/noir20" />
 
             <ImageView
@@ -224,9 +253,9 @@
                 android:layout_height="60dp"
                 android:layout_row="8"
                 android:layout_column="0"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginStart="30dp"
                 app:srcCompat="@drawable/noir21" />
 
             <ImageView
@@ -235,7 +264,9 @@
                 android:layout_height="60dp"
                 android:layout_row="8"
                 android:layout_column="1"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir22" />
 
             <ImageView
@@ -244,7 +275,9 @@
                 android:layout_height="60dp"
                 android:layout_row="8"
                 android:layout_column="2"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir23" />
 
             <ImageView
@@ -253,7 +286,9 @@
                 android:layout_height="60dp"
                 android:layout_row="8"
                 android:layout_column="3"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir24" />
 
 
@@ -263,7 +298,9 @@
                 android:layout_height="60dp"
                 android:layout_row="9"
                 android:layout_column="3"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir25" />
 
             <ImageView
@@ -272,7 +309,9 @@
                 android:layout_height="60dp"
                 android:layout_row="10"
                 android:layout_column="3"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir26" />
 
             <ImageView
@@ -281,7 +320,9 @@
                 android:layout_height="60dp"
                 android:layout_row="10"
                 android:layout_column="2"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir27" />
 
             <ImageView
@@ -290,7 +331,9 @@
                 android:layout_height="60dp"
                 android:layout_row="10"
                 android:layout_column="1"
-                android:layout_margin="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
                 app:srcCompat="@drawable/noir28" />
 
             <ImageView
@@ -299,9 +342,9 @@
                 android:layout_height="60dp"
                 android:layout_row="10"
                 android:layout_column="0"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginStart="30dp"
                 app:srcCompat="@drawable/noir29" />
 
             <ImageView
@@ -310,10 +353,9 @@
                 android:layout_height="60dp"
                 android:layout_row="11"
                 android:layout_column="0"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginBottom="15dp"
                 app:srcCompat="@drawable/noir30" />
 
             <ImageView
@@ -322,37 +364,24 @@
                 android:layout_height="60dp"
                 android:layout_row="12"
                 android:layout_column="0"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="100dp"
                 app:srcCompat="@drawable/noir31" />
 
-
-            <Button
-                android:layout_marginTop="20dp"
-                android:layout_column="0"
-                android:layout_columnSpan="4"
-                android:layout_columnWeight="1"
-                android:layout_row="13"
-                android:layout_rowWeight="1"
-                android:id="@+id/resetButton"
-                android:text="@string/reset"/>
-
-            <Button
-                android:layout_marginTop="10dp"
-                android:layout_column="0"
-                android:layout_columnSpan="4"
-                android:layout_columnWeight="1"
-                android:layout_row="14"
-                android:layout_rowWeight="1"
-                android:id="@+id/next"
-                android:text="@string/next"/>
-
         </GridLayout>
-
-
     </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/black"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_nav"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
@@ -47,28 +48,35 @@ class ResolutionDeuxActivity : AppCompatActivity() {
             }
         }
 
-
-        val resetButton : Button = findViewById(R.id.resetButton)
-        resetButton.setOnClickListener {
-            val alertDialog: android.app.AlertDialog.Builder = android.app.AlertDialog.Builder(this)
-            alertDialog.setMessage("Voulez-vous vraiment réinitialiser cette résolution ?")
-                .setPositiveButton("Oui", DialogInterface.OnClickListener { dialog, which ->
-                    for(i in 0..30){
-                        imageVList[i].setImageResource(imageToDoList[i])
-                        rondList?.get(i)?.state = 0
+        val bottomNav : BottomNavigationView = findViewById(R.id.bottom_navigation)
+        bottomNav.selectedItemId = R.id.act2
+        bottomNav.setOnNavigationItemSelectedListener(
+            BottomNavigationView.OnNavigationItemSelectedListener { item ->
+                when (item.itemId) {
+                    R.id.act1 -> {
+                        val intent = Intent(this, MainActivity::class.java)
+                        startActivity(intent)
                     }
-                    saveData()
-                })
-                .setNegativeButton("Non",
-                    DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
-            alertDialog.create()?.show()
-        }
+                    R.id.act2 -> {
 
-        val previousButton : Button = findViewById(R.id.next)
-        previousButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
+                    }
+                    R.id.reset -> {
+                        val alertDialog: android.app.AlertDialog.Builder = android.app.AlertDialog.Builder(this)
+                        alertDialog.setMessage("Voulez-vous vraiment réinitialiser cette résolution ?")
+                            .setPositiveButton("Oui", DialogInterface.OnClickListener { dialog, which ->
+                                for (i in 0..30) {
+                                    imageVList[i].setImageResource(imageToDoList[i])
+                                    rondList?.get(i)?.state = 0
+                                }
+                                saveData()
+                            })
+                            .setNegativeButton("Non",
+                                DialogInterface.OnClickListener { dialog, which -> dialog.dismiss() })
+                        alertDialog.create()?.show()
+                    }
+                }
+                true
+            })
 
     }
 

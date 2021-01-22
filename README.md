@@ -29,5 +29,5 @@
 
 <h3> How install the app ? </h3>
 
-<a href="https://github.com/Gurwan/ResolutionHeld/releases/download/1.0.0/1.0.0.apk">APK Version</a>
+<a href="https://github.com/Gurwan/ResolutionHeld/releases/download/2.0.0/2.0.0.apk">APK Version</a>
 
